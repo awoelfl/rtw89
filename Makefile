@@ -23,7 +23,7 @@ ifeq ("","$(wildcard MOK.der)")
 NO_SKIP_SIGN := y
 endif
 
-EXTRA_CFLAGS += -O2
+EXTRA_CFLAGS += -O2 -Wno-incompatible-pointer-types
 EXTRA_CFLAGS += -DCONFIG_RTW89_DEBUGMSG
 EXTRA_CFLAGS += -DCONFIG_RTW89_DEBUGFS
 KEY_FILE ?= MOK.der
